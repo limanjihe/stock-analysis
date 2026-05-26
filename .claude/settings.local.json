@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:www.marketwatch.com)",
+      "WebFetch(domain:finance.yahoo.com)",
+      "WebFetch(domain:www.google.com)",
+      "Bash(pip list *)",
+      "Bash(python -c \"import yfinance; print\\('yfinance available'\\)\")",
+      "Bash(python -c \"import akshare; print\\('akshare available'\\)\")",
+      "Bash(pip install *)",
+      "Bash(python -c \"import yfinance; print\\(yfinance.__version__\\)\")",
+      "Bash(python -c \"import akshare; print\\(akshare.__version__\\)\")",
+      "Bash(python *)",
+      "Bash(python3 *)",
+      "Bash(curl -k -s \"https://datacenter.eastmoney.com/securities/api/data/get?type=RPT_F10_FINANCE_MAINFINADATA&sty=ALL&filter=\\(SECURITY_CODE%3D%22002230%22\\)&p=1&ps=5&sr=-1&st=REPORT_DATE\" -H \"User-Agent: Mozilla/5.0\" -H \"Referer: https://www.eastmoney.com/\")",
+      "Bash(curl -k -s \"https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=0.002230&fields1=f1,f2,f3,f4,f5,f6,f7&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61&klt=101&fqt=0&beg=20260501&end=20260526&lmt=30\" -H \"User-Agent: Mozilla/5.0\")",
+      "Bash(curl *)",
+      "WebFetch(domain:finance.eastmoney.com)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(grep -v '^\\\\s*$')",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)"
+    ]
+  }
+}
